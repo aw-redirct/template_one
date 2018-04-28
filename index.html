@@ -1,3 +1,359 @@
+<!DOCTYPE html>
 <html>
-<p>abc</p>
+    <head>
+        <title>
+            Yasser Noori
+        </title>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+        <script>
+            $(function() {
+                $('a').click(function(e) {
+                    e.preventDefault();
+                    $('body, html').animate({
+                        scrollTop: $($.attr(this, 'href')).offset().top
+                    }, 750);
+                });
+            });
+        </script>
+        <style>
+        body {font-family: "Lato", sans-serif}
+        .mySlides {display: none}
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> <a class="w3-bar-item w3-button w3-padding-large" href="#home">Home</a> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" href="#about">About</a> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" href="#entertainment">Entertainment</a> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" href="#read">Read</a> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" href="#extra">Extra</a> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" href="#contact">Contact</a>
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <button class="w3-bar-item w3-button" onclick="document.getElementById('updates').style.display='block'">Updates</button> <a class="w3-bar-item w3-button" href="#">Chat</a> <a class="w3-bar-item w3-button" href="#">Media</a>
+                    </div>
+                </div>
+            </div>
+            <a class="w3-padding-large w3-hover-red w3-hide-small w3-right" href="javascript:void(0)"><i class="fa fa-search"></i></a>
+        </div>
+        <!-- Navbar on small screens -->
+
+        <div class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" id="navDemo" style="margin-top:46px">
+            <a class="w3-bar-item w3-button w3-padding-large" href="#about">About</a> <a class="w3-bar-item w3-button w3-padding-large" href="#Entertainment">Entertainment</a> <a class="w3-bar-item w3-button w3-padding-large" href="#contact">Contact</a>
+        </div>
+
+        <div class="w3-modal" id="updates">
+            <div class="w3-modal-content w3-animate-top w3-card-4">
+                <header class="w3-container w3-grey w3-center w3-padding-32">
+                    <span class="w3-button w3-grey w3-xlarge w3-display-topright" onclick="document.getElementById('updates').style.display='none'">x</span>
+                    <h2 class="w3-wide">
+                        UPDATES
+                    </h2>
+                </header>
+
+                <div class="w3-container">
+                    <p>
+                        <label>yasser-noori.github.io</label>
+                    </p>
+
+                    <p>
+                        <label>version 1.3.5</label>
+                    </p>
+
+                    <p>
+                        <label>- Website Hosted [28.04.2018]</label>
+                    </p>
+                    <button class="w3-button w3-red w3-section" onclick="document.getElementById('updates').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Page content -->
+
+        <div class="w3-content" id="home" style="max-width:2000px;margin-top:46px">
+            <div class="mySlides w3-display-container w3-center">
+                <img src="https://i.imgur.com/YRNgKmD.png" style="width:100%;height:905px;">
+                <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                    <h3>
+                        Yasser Noori
+                    </h3>
+
+                    <p>
+                        <b>The Youngest "Genius"</b>
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-content" style="max-width:2000px;margin-top:46px">
+                <!-- Automatic Slideshow Images -->
+
+                <div class="mySlides w3-display-container w3-center">
+                    <img src="" style="width:100%">
+                    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                    </div>
+                </div>
+
+                <div class="mySlides w3-display-container w3-center">
+                    <img src="" style="width:100%">
+                    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                        <h3>
+                        </h3>
+
+                        <p>
+                            <b></b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-content w3-center w3-padding-64" id="about" style="max-width:800px">
+                    <h2 class="w3-wide">
+                        ABOUT ME
+                    </h2>
+
+                    <p class="w3-opacity">
+                        <i>I love &lt; / code &gt;</i>
+                    </p>
+
+                    <p class="w3-justify">
+                        Hello there, my name is Yasser Noori. Haven't heard of me? Well i'm the 12 year old web-developer. I mostly work with Node.js, Socket.io, AI Bots and many other server-side languages. This is my personal website, where I post all my projects and other intresting stuff. I'm also a student from <b>Valley Park Middle School</b> , but they didn't teach me nothing about computers, all self-learned.<br>
+                    </p>
+
+                    <center>
+                        <b>(Heh. . . Actually -- i'm just here to make some quick-bucks :D)</b>
+                        <p>
+                        </p>
+
+                        <div class="w3-row w3-padding-32">
+                            <div class="w3-third">
+                                <p>
+                                    Name
+                                </p>
+                                <img alt="Random Name" class="w3-round w3-margin-bottom" src="" style="width:60%">
+                            </div>
+
+                            <div class="w3-third">
+                                <p>
+                                    Name
+                                </p>
+                                <img alt="Random Name" class="w3-round w3-margin-bottom" src="" style="width:60%">
+                            </div>
+
+                            <div class="w3-third">
+                                <p>
+                                    Name
+                                </p>
+                                <img alt="Random Name" class="w3-round" src="" style="width:60%">
+                            </div>
+                        </div>
+                    </center>
+                </div>
+
+                <div class="w3-black" id="entertainment">
+                    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                        <h2 class="w3-wide w3-center">
+                            ENTERTAINMENT
+                        </h2>
+
+                        <p class="w3-opacity w3-center">
+                            <i>Remember to play my games!</i>
+                        </p>
+                        <br>
+
+                        <ul class="w3-ul w3-border w3-white w3-text-grey">
+                            <li class="w3-padding">Game Engines/Projects: <span class="w3-tag w3-margin-left">These are only a few of my creations.</span>
+                            </li>
+                        </ul>
+
+                        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+                            <div class="w3-third w3-margin-bottom">
+                                <img class="w3-hover-opacity" src="https://raw.githubusercontent.com/huytd/agar.io-clone/master/screenshot.png" style="width:100%">
+                                <div class="w3-container w3-white">
+                                    <p>
+                                        <b>[D O M A I N]</b>
+                                    </p>
+
+                                    <p class="w3-opacity">
+                                        Released Fri 12 Feb 2018
+                                    </p>
+
+                                    <p>
+                                        Super-Split | Agar.io-Clone
+                                    </p>
+                                    <button class="w3-button w3-black w3-margin-bottom">Play</button>
+                                </div>
+                            </div>
+
+                            <div class="w3-third w3-margin-bottom">
+                                <img class="w3-hover-opacity" src="https://image.ibb.co/fMCN1x/Untitled_1.jpg" style="width:100%">
+                                <div class="w3-container w3-white">
+                                    <p>
+                                        <b>[D O M A I N]</b>
+                                    </p>
+
+                                    <p class="w3-opacity">
+                                        Released Sun 29 April 2018
+                                    </p>
+
+                                    <p>
+                                        Pongnite | Pong-Clone
+                                    </p>
+                                    <button class="w3-button w3-black w3-margin-bottom">Play</button>
+                                </div>
+                            </div>
+
+                            <div class="w3-third w3-margin-bottom">
+                                <img alt="" class="w3-hover-opacity" src="" style="width:100%">
+                                <div class="w3-container w3-white">
+                                    <p>
+                                        <b>[D O M A I N]</b>
+                                    </p>
+
+                                    <p class="w3-opacity">
+                                        Coming Soon. . .
+                                    </p>
+
+                                    <p>
+                                    </p>
+                                    <button class="w3-button w3-black w3-margin-bottom">Play</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-content w3-padding-64" id="read" style="max-width:800px">
+                    <h2 class="w3-wide w3-center">
+                        CREEPYPASTAS
+                    </h2>
+
+                    <p class="w3-opacity w3-center">
+                        <i>Any suggestions? Leave a note!</i>
+                    </p>
+
+                    <div class="w3-row w3-padding-32">
+                        <div class="w3-col m6 w3-large w3-margin-bottom">
+                            <i class="fa fa-map-marker" style="width:30px"></i> Toronto, ON<br>
+                            <i class="fa fa-phone" style="width:30px"></i> Phone: N/A<br>
+                            <i class="fa fa-envelope" style="width:30px"></i> Email: yass3rnoori@gmail.com<br>
+                        </div>
+
+                        <div class="w3-col m6">
+                            <form action="" target="_blank">
+                                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                                    <div class="w3-half">
+                                        <input class="w3-input w3-border" name="Name" placeholder="Name" required="" type="text">
+                                    </div>
+
+                                    <div class="w3-half">
+                                        <input class="w3-input w3-border" name="Email" placeholder="Email" required="" type="text">
+                                    </div>
+                                </div>
+                                <input class="w3-input w3-border" name="Message" placeholder="Message" required="" type="text"> <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-black" id="extra">
+                    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                        <h2 class="w3-wide w3-center">
+                            EXTRA
+                        </h2>
+
+                        <p class="w3-opacity w3-center">
+                            <i>Remember to drop a suggestion!</i>
+                        </p>
+                        <br>
+
+                        <ul class="w3-ul w3-border w3-white w3-text-grey">
+                            <li class="w3-padding">Your suggestions might show up here!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- The Contact Section -->
+
+                <div class="w3-container w3-content w3-padding-64" id="contact" style="max-width:800px">
+                    <h2 class="w3-wide w3-center">
+                        CONTACT
+                    </h2>
+
+                    <p class="w3-opacity w3-center">
+                        <i>Any suggestions? Leave a note!</i>
+                    </p>
+
+                    <div class="w3-row w3-padding-32">
+                        <div class="w3-col m6 w3-large w3-margin-bottom">
+                            <i class="fa fa-map-marker" style="width:30px"></i> Toronto, ON<br>
+                            <i class="fa fa-phone" style="width:30px"></i> Phone: N/A<br>
+                            <i class="fa fa-envelope" style="width:30px"></i> Email: yass3rnoori@gmail.com<br>
+                        </div>
+
+                        <div class="w3-col m6">
+                            <form action="" target="_blank">
+                                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                                    <div class="w3-half">
+                                        <input class="w3-input w3-border" name="Name" placeholder="Name" required="" type="text">
+                                    </div>
+
+                                    <div class="w3-half">
+                                        <input class="w3-input w3-border" name="Email" placeholder="Email" required="" type="text">
+                                    </div>
+                                </div>
+                                <input class="w3-input w3-border" name="Message" placeholder="Message" required="" type="text"> <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <iframe allowfullscreen frameborder="0" height="450" src="https://www.google.com/maps/embed/v1/place?q=thorncliffe&key=AIzaSyD0nPgBFj6tqlS4fKASUxLJOP2h3gOqfYU" style="width:100%;border:0"></iframe> 
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap">
+                </script> <!-- Footer -->
+
+                <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+                    <i class="fa fa-facebook-official w3-hover-opacity"></i> <i class="fa fa-instagram w3-hover-opacity"></i> <i class="fa fa-snapchat w3-hover-opacity"></i> <i class="fa fa-pinterest-p w3-hover-opacity"></i> <i class="fa fa-twitter w3-hover-opacity"></i> <i class="fa fa-linkedin w3-hover-opacity"></i>
+                    <p class="w3-medium">
+                        (c) Yasser Noori, 2018
+                    </p>
+                </footer>
+                <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {
+                        myIndex = 1
+                    }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 900000000000000000);
+                }
+                // Used to toggle the menu on small screens when clicking on the menu button
+                function myFunction() {
+                    var x = document.getElementById("navDemo");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else {
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+                // When the user clicks anywhere outside of the modal, close it
+                var modal = document.getElementById('updates');
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+                </script>
+            </div>
+        </div>
+    </body>
 </html>
