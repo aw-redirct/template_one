@@ -1,27 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-           Mister Widemouth
-        </title>
-        <meta content="width=device-width, initial-scale=1" name="viewport">
-        <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
-        <style>
-p {
-    font-size: 20px;
-        align-content: center;
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+<style>
+* {
+  box-sizing: border-box;
 }
-        </style>
-    </head>
-    <body>
-        <div class="w3-light-grey w3-padding-32 w3-center">
-            <h1 class="w3-jumbo">
-                Mister Widemouth
-            </h1>
-        </div>
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color:#e5e5e5;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
 
-        <div class="w3-row w3-container w3-margin-top">
-            <div class="w3-third w3-justify w3-container">
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+}
+</style>
+</head>
+<body style="font-family:'raleway';color:#aaaaaa;">
+
+<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+  <h1>Hello World</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+  </div>
+
+  <div class="main">
+    <h2>Lorum Ipsum</h2>
                 <h2>
                     --- Credit To perfectcircle35
                     </br>
@@ -192,7 +236,15 @@ p {
         <p>
             I noticed that many of the tombstones belonged to children.
         </p>
-            </div>
-        </div>
-    </body>
+  </div>
+
+  <div class="right">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  </div>
+</div>
+
+<footer style="background-color:#e5e5e5;text-align:center;">(c) Yasser Noori, 2018</footer>
+
+</body>
 </html>
