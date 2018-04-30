@@ -1,32 +1,82 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
         <title>
-           Razor Games
+          Razor Games
         </title>
-        <meta content="width=device-width, initial-scale=1" name="viewport">
-        <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
         <style>
-p {
-    font-size: 20px;
-}
+        body {
+        zoom: 1.25;
+        }
+        * {
+        box-sizing: border-box;
+        }
+        .left {
+        float:left;
+        width:20%;
+        text-align:center;
+        position: fixed;
+        opacity: 0;
+        }
+        .left a {
+        background-color:#e5e5e5;
+        padding:8px;
+        margin-top:7px;
+        display:block;
+        width:100%;
+        color:black;
+        opacity: 0;
+        }
+        .main {
+        float:left;
+        width:60%;
+        padding:0 20px;
+        font-size: 20px;
+        }
+        .right {
+        background-color:#e5e5e5;
+        right:0.6%;
+        width:20%;
+        height: 325px;
+        text-align:center;
+        position: fixed;
+        }
+        @media only screen and (max-width:620px) {
+        /* For mobile phones: */
+        .menu, .main {
+        width:100%;
+        }
+        }
+        footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        }
         </style>
     </head>
-    <body>
-        <div class="w3-light-grey w3-padding-32 w3-center">
-            <h1 class="w3-jumbo">
-                Razor Games
+    <body style="font-family:'raleway';color:#333;">
+        <div style="font-size:20px;background-color:#e5e5e5;padding:15px;text-align:center;">
+            <h1>
+              Razor Games
             </h1>
         </div>
 
-        <div class="w3-row w3-container w3-margin-top">
-            <div class="w3-third w3-justify w3-container">
+        <div style="overflow:auto">
+            <div class="left">
+                <a href="#">Link 1</a>
+            </div>
+
+            <div class="main">
                 <h2>
-                    --- Credit To Tom
+                     Credit To Tom
                     </br>
-                    --- Reading Time: 31 minutes
+                     Reading Time: 31 minutes
                     </br>
-                    --- Rating 9.1 / 10 Stars
+                     Rating 9.1 / 10 Stars
                 </h2>
 
         <p>
@@ -1026,6 +1076,20 @@ p {
             It&rsquo;s the holiday season and if this VR set and game catches any traction, God only knows what will happen.
         </p>
             </div>
+
+            <div class="right">
+                <h2>
+                    AD
+                </h2>
+
+                <p>
+                    Content
+                </p>
+            </div>
         </div>
+
+        <footer style="background-color:#e5e5e5;text-align:center;height:3%;">
+            (c) Yasser Noori, 2018
+        </footer>
     </body>
 </html>
